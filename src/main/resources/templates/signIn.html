@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Aueb Movies</title>
+    <link rel="stylesheet" type="text/css" href="css/styleSignIn.css">
+    <script src="js/script.js"></script>
+    <script src="js/signIn.js"></script>
+</head>
+<body>
+<div class="grid-container">
+    <!--header-->
+    <div class="item1">
+
+        <div class="logo-image">
+            <a href="index">
+                <img src="img/mylogo.png" alt="logo" id="image-logo-id">
+            </a>
+        </div>
+        <h1>Aueb Movies</h1>
+        <a href="signIn" class="login-button">
+            <img src="img/login.png" alt="login image" class="login-image">
+        </a>
+        <a href="/logout" class="login-button2">
+            <img src="img/logout.png" alt="logout" class="login-image">
+        </a>
+        <a href="/Mybookmarks" class="login-button3">
+            <img src="img/bookmarkImage.png" alt="bookmark" class="login-image">
+        </a>
+
+    </div>
+    <!--main-->
+
+    <div class="item2">
+        <h2 id="loggedIn">You are already Logged In :)</h2>
+        <form class="form" id='formSignIn' action="login" method='POST'>
+            <h1 class="formData">Username</h1>
+            <br>
+            <input type="text" placeholder="Enter Username" name='username' required>
+            <br><br>
+            <h1 class="formData">Password</h1>
+            <br>
+            <input type="password" placeholder="Enter Password" name='password' required>
+            <br><br>
+            <div>
+                <a href="/signUp">
+             <h2 id="createAccount">Create an account</h2>
+                </a>
+             <button name="submit" value="submit" type="submit" id="submitButton">Login</button>
+            </div>
+        </form>
+
+    </div>
+    <div class="item3">
+        <h2>This web app was created as part of an assignment </h2>
+        <div id="copyright">&copy; Vasilis Konstantinou & Giannis Fourfouris. All rights reserved.
+        </div>
+        <br>
+
+    </div>
+</div>
+</body>
+</html>

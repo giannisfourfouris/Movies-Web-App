@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Aueb Movies</title>
+    <link rel="stylesheet" type="text/css" href="css/styleSignUp.css">
+    <script src="js/script.js"></script>
+    <script src="js/SignUpController.js"></script>
+</head>
+<body>
+<div class="grid-container">
+    <!--header-->
+    <div class="item1">
+
+        <div class="logo-image">
+            <a href="index">
+                <img src="img/mylogo.png" alt="logo" id="image-logo-id">
+            </a>
+        </div>
+        <h1>Aueb Movies</h1>
+        <a href="signIn" class="login-button">
+            <img src="img/login.png" alt="login image" class="login-image">
+        </a>
+        <a href="/logout" class="login-button2">
+            <img src="img/logout.png" alt="logout" class="login-image">
+        </a>
+        <a href="/Mybookmarks" class="login-button3">
+            <img src="img/bookmarkImage.png" alt="bookmark" class="login-image">
+        </a>
+
+    </div>
+    <!--main-->
+    <div class="item2">
+        <h1 id="titleCreate"><u>Create an Account</u></h1>
+        <form class="form" onsubmit="event.preventDefault();">
+            <h1 class="formData">Username</h1>
+            <br>
+            <input type="text"  id = "signUpemail" placeholder="Enter Username" name="uname" required>
+            <br><br>
+            <h1 class="formData">Password</h1>
+            <br>
+            <input type="password" id = "signUpPassword" placeholder="Enter Password" name="psw" required>
+            <br><br>
+            <button id="signUpButton" onclick="signUpUserr()">Sign Up</button>
+        </form>
+
+    </div>
+    <div class="item3">
+        <h2>This web app was created as part of an assignment </h2>
+        <div id="copyright">&copy; Vasilis Konstantinou & Giannis Fourfouris. All rights reserved.
+        </div>
+        <br>
+
+    </div>
+</div>
+</body>
+</html>

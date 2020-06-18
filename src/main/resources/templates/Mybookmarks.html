@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/SignUpController.js"></script>
+    <script src="js/MyBookmarks.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/MyBookmarks.css">
+</head>
+<body>
+<div class="grid-container">
+        <!--header-->
+        <div class="item1">
+
+            <div class="logo-image">
+                <a href="index">
+                    <img src="img/mylogo.png" alt="logo" id="image-logo-id">
+                </a>
+            </div>
+            <h1>Aueb Movies</h1>
+            <a href="signIn" class="login-button">
+                <img src="img/login.png" alt="login image" class="login-image">
+            </a>
+            <a href="/logout" class="login-button2">
+                <img src="img/logout.png" alt="logout" class="login-image">
+            </a>
+            <a href="/Mybookmarks" class="login-button3">
+                <img src="img/bookmarkImage.png" alt="bookmark" class="login-image">
+            </a>
+
+        </div>
+        <!--main-->
+        <div class="item2">
+            <div class="div-box" id="div-box">
+            <h2 id="bookmarkMessage">You are not logged In. Please Log In!</h2>
+            </div>
+            <!--        <p th:text="'This is from search bar' + ${user.name}"/>-->
+        </div>
+        <div class="item3">
+            <h2>This web app was created as part of an assignment </h2>
+            <div id="copyright">&copy; Vasilis Konstantinou & Giannis Fourfouris. All rights reserved.
+            </div>
+            <br>
+
+        </div>
+    </div>
+</body>
+</html>

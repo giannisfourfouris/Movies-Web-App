@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="webjars/jquery/2.2.4/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Aueb Movies</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="js/ApiConsumer.js"></script>
+</head>
+<body>
+<div class="grid-container">
+    <!--header-->
+    <div class="item1">
+
+        <div class="logo-image">
+            <a href="index">
+            <img src="img/mylogo.png" alt="logo" id="image-logo-id">
+            </a>
+        </div>
+        <h1>Aueb Movies</h1>
+        <a href="signIn" class="login-button">
+            <img src="img/login.png" alt="login image" class="login-image">
+        </a>
+        <a href="/logout" class="login-button2">
+            <img src="img/logout.png" alt="logout" class="login-image">
+        </a>
+        <a href="/Mybookmarks" class="login-button3">
+            <img src="img/bookmarkImage.png" alt="bookmark" class="login-image">
+        </a>
+
+    </div>
+    <!--main-->
+    <div class="item2">
+        <form class="form">
+            <input type="text" placeholder="Search your favourite movie" id="search-bar">
+        </form>
+        <div class="div-box" id="div-box">
+            <div class="div-cell" id="div-cell">
+<!--                <button  class ="bookmark-button" id = "bookmark-button">-->
+<!--                    <img src="img/addbookmark.png" alt = "add bookmarks button"id="addImage"/>-->
+<!--                </button>-->
+                <input onclick="addBookm()" type="image" class ="bookmark-button" id = "bookmark-button" src="img/addbookmark.png" >
+                <ul class="movie-list" id="movie-list">
+                </ul>
+            </div>
+            <div class="div-cell" id="div-cell-box">
+                <img src="" alt="Poster Image" class = "poster-image" id = "poster-image"/>
+            </div>
+        </div>
+<!--        <p th:text="'This is from search bar' + ${user.name}"/>-->
+    </div>
+    <div class="item3">
+        <h2>This web app was created as part of an assignment </h2>
+        <div id="copyright">&copy; Vasilis Konstantinou & Giannis Fourfouris. All rights reserved.
+        </div>
+        <br>
+
+    </div>
+</div>
+
+</body>
+</html>
